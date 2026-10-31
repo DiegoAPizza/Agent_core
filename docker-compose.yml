@@ -1,0 +1,5 @@
+services:
+  agent:      # FastAPI :8000
+  tools:      # FastMCP :8001
+  postgres:   # PostgreSQL + pgvector
+  redis:      # Redis

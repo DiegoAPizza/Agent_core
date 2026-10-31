@@ -1,0 +1,22 @@
+# --- API y servidor ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+
+# --- Base de datos relacional y vectorial ---
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.9
+alembic>=1.13.0
+pgvector>=0.2.5
+
+# --- Caché / contexto ---
+redis>=5.0.0
+
+# --- LLM local (Ollama) ---
+ollama>=0.3.0
+
+# --- Cliente MCP (FastMCP) y servidor de tools ---
+fastmcp>=0.4.0
+
+# --- Memoria a largo plazo (embeddings) ---
+sentence-transformers>=3.0.0

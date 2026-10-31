@@ -1,9 +1,9 @@
 import json
 import logging
 from pydantic import ValidationError
-from domain.models import ToolCall, ToolPermission
-from domain.tools import TOOLS_REGISTRY
-from core.mcp_client import MCPToolClient
+from Agent_core.domain.models import ToolCall, ToolPermission
+from Agent_core.domain.tools import TOOLS_REGISTRY
+from Agent_core.core.mcp_client import MCPToolClient
 logger = logging.getLogger("agentcore.harness")
 
 class ToolHarness:

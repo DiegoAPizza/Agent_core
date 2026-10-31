@@ -1,7 +1,7 @@
-from domain.agent_loop import run_agent
-from core.logging_config import setup_logging
+from Agent_core.domain.agent_loop import run_agent
+from Agent_core.core.logging_config import setup_logging
 from fastapi import FastAPI
-from api.routes.agent import router
+from Agent_core.api.routes.agent import router
 if __name__ == "__main__":
     setup_logging()
     state = run_agent("¿Cuánto es 25 * 4?",session_id="test-002")

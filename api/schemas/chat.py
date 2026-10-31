@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from typing import List,Optional
-from domain.models import AgentStep
+from Agent_core.domain.models import AgentStep
 class StepResponse(BaseModel):
     thought: str
     action_name: Optional[str] = None    # el nombre de la tool usada

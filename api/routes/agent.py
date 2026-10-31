@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
-from api.schemas.chat import ChatRequest, ChatResponse, StepResponse, step_to_response
-from domain.agent_loop import run_agent
-from core.memory import ContextWindow
+from Agent_core.api.schemas.chat import ChatRequest, ChatResponse, StepResponse, step_to_response
+from Agent_core.domain.agent_loop import run_agent
+from Agent_core.core.memory import ContextWindow
 
 router = APIRouter(prefix="/agent", tags=["agent"])
 

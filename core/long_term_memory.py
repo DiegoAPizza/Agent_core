@@ -1,6 +1,6 @@
 from sentence_transformers import SentenceTransformer
-from db.base import SessionLocal
-from db.model import MemoryChunk
+from Agent_core.db.base import SessionLocal
+from Agent_core.db.model import MemoryChunk
 import uuid
 
 model = SentenceTransformer("all-MiniLM-L6-v2")

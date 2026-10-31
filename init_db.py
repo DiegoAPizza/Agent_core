@@ -1,5 +1,5 @@
-from db.base import Base, engine
-from db.model import MemoryChunk  # importante: registra el modelo en Base.metadata
+from Agent_core.db.base import Base, engine
+from Agent_core.db.model import MemoryChunk  # importante: registra el modelo en Base.metadata
 from sqlalchemy import text
 
 # 1. Crear la extensión vectorial si no existe

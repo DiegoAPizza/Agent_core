@@ -1,13 +1,13 @@
 
 import re
-from domain.models import AgentState, AgentStep, ToolCall,ToolPermission
-from domain.tools import TOOLS_REGISTRY
-from domain.harness import ToolHarness
+from Agent_core.domain.models import AgentState, AgentStep, ToolCall,ToolPermission
+from Agent_core.domain.tools import TOOLS_REGISTRY
+from Agent_core.domain.harness import ToolHarness
 import json
-from domain.models import AgentStep, ToolCall
+from Agent_core.domain.models import AgentStep, ToolCall
 import ollama
-from core.memory import ContextWindow
-from core.long_term_memory import LongTermMemory
+from Agent_core.core.memory import ContextWindow
+from Agent_core.core.long_term_memory import LongTermMemory
 
 system_prompt = """You are a helpful assistant with access to tools.
 

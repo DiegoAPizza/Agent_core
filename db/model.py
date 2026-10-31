@@ -1,7 +1,7 @@
 from sqlalchemy import Column, String, Text, DateTime
 from sqlalchemy import func
 from pgvector.sqlalchemy import Vector
-from db.base import Base
+from Agent_core.db.base import Base
 import uuid
 class MemoryChunk(Base):
     __tablename__ = "memory_chunks"
